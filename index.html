@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soccer Training Drills</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 60px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #ff6b35, #f7c948, #1dd3b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 48px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid;
+  }
+
+  .category-header h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .category-icon {
+    font-size: 1.8rem;
+  }
+
+  .cat-left .category-header { border-color: #1dd3b0; }
+  .cat-left .category-header h2 { color: #1dd3b0; }
+
+  .cat-speed .category-header { border-color: #f7c948; }
+  .cat-speed .category-header h2 { color: #f7c948; }
+
+  .cat-power .category-header { border-color: #ff6b35; }
+  .cat-power .category-header h2 { color: #ff6b35; }
+
+  .card {
+    background: #161616;
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    cursor: default;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  }
+
+  .cat-left .card:hover { border-color: #1dd3b0; }
+  .cat-speed .card:hover { border-color: #f7c948; }
+  .cat-power .card:hover { border-color: #ff6b35; }
+
+  .card-emoji {
+    font-size: 3rem;
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .cat-left .card h3 { color: #1dd3b0; }
+  .cat-speed .card h3 { color: #f7c948; }
+  .cat-power .card h3 { color: #ff6b35; }
+
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #b0b0b0;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #222;
+    color: #555;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<h1>Soccer Training Drills</h1>
+<p class="subtitle">Daily practice guide</p>
+
+<div class="categories">
+
+  <div class="category cat-left">
+    <div class="category-header">
+      <span class="category-icon">🦶</span>
+      <h2>Left Foot</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🧱</span>
+      <h3>Wall Passes (Left Only)</h3>
+      <p>Stand 2–3 feet from a wall and pass the ball using only your left foot. Focus on a firm, flat strike with the inside of your foot and control the return cleanly. Do sets of 30 passes, keeping a quick rhythm.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🔶</span>
+      <h3>Cone Dribbling (Left Foot Only)</h3>
+      <p>Set up 8–10 cones in a line, spaced about a yard apart. Weave through them using only your left foot, keeping the ball close with soft touches. Go slow at first, then build speed as your control improves.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🎯</span>
+      <h3>Weak Foot Finishing</h3>
+      <p>Set up shots from different angles around the box and finish every one with your left foot. Focus on placing the ball into the corners rather than blasting it. Aim for 20 quality shots per session.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🤹</span>
+      <h3>Juggling Left Foot Only</h3>
+      <p>Start by dropping the ball onto your left foot and try to keep it up as long as possible. Use the top of your foot (laces area) and keep your ankle locked. Try to beat your personal record every session.</p>
+    </div>
+  </div>
+
+  <div class="category cat-speed">
+    <div class="category-header">
+      <span class="category-icon">⚡</span>
+      <h2>Speed</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🚀</span>
+      <h3>10-Yard Explosive Starts</h3>
+      <p>From a standing start, explode forward for 10 yards at maximum effort. Focus on driving your knees up and pumping your arms hard in the first three steps. Rest 30 seconds between reps and do 8–10 total.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🏃‍♀️</span>
+      <h3>40-Yard Sprint Intervals</h3>
+      <p>Sprint 40 yards at full speed, then walk back to the start line to recover. Keep your form tight — chest up, arms driving, toes pointing forward. Do 6–8 reps with full recovery between each one.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">↔️</span>
+      <h3>Lateral Shuffle + Sprint</h3>
+      <p>Shuffle laterally for 5 yards, then explode into a forward sprint for 10 yards. Stay low during the shuffle with your weight on the balls of your feet. Alternate directions and do 8 reps total.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🔥</span>
+      <h3>High Knees + Burst</h3>
+      <p>Do high knees in place for 5 seconds, driving your knees as high and fast as possible. On a signal, burst into a 10-yard sprint. This trains your ability to accelerate out of quick footwork.</p>
+    </div>
+  </div>
+
+  <div class="category cat-power">
+    <div class="category-header">
+      <span class="category-icon">💥</span>
+      <h2>Shot Power</h2>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">⚽</span>
+      <h3>Standing Power Shots</h3>
+      <p>Place the ball dead still and strike it as hard as you can with your laces from a standing position. Plant your non-kicking foot beside the ball and swing through completely. Focus on clean contact over aim.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">👟</span>
+      <h3>One-Step Power Shots</h3>
+      <p>Take just one step before striking the ball with maximum power. This isolates your kicking technique and forces you to generate power efficiently. Lock your ankle and follow through toward the target.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🔄</span>
+      <h3>Hip Rotation Drill</h3>
+      <p>Practice the kicking motion without a ball, focusing on rotating your hips fully through the strike. Your hips should open up and drive forward — this is where real shot power comes from. Do 15 slow reps per side.</p>
+    </div>
+
+    <div class="card">
+      <span class="card-emoji">🥾</span>
+      <h3>Laces-Only Shooting</h3>
+      <p>Strike every shot using only the top of your foot (laces). Keep your toe pointed down, ankle locked, and lean slightly over the ball. This builds the habit of hitting clean, powerful driven shots.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>Train hard. Stay consistent. Get better every day.</footer>
+
+</body>
+</html>
