@@ -140,7 +140,6 @@
     background: #000;
     border-radius: 0 14px 14px 0;
     overflow: hidden;
-    aspect-ratio: 9 / 14;
   }
 
   .card-video .video-wrap iframe {
@@ -150,6 +149,45 @@
     width: 100%;
     height: 100%;
     border: 0;
+  }
+
+  .card-video .card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+  }
+
+  .card-video .card-content ul li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #b0b0b0;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+  .card-video .card-content ul li::before {
+    position: absolute;
+    left: 0;
+  }
+
+  .card-video .card-content ul.scoring li::before {
+    content: "⚽";
+    font-size: 0.75rem;
+  }
+
+  .card-video .card-content ul.technique li::before {
+    content: "▸";
+    color: #ff6b35;
+    font-weight: 700;
+  }
+
+  .card-video .card-content .card-note {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
   }
 
   footer {
@@ -243,6 +281,34 @@
     <h2>Shot Power</h2>
   </div>
   <div class="card-grid">
+    <div class="card card-video">
+      <div class="card-content">
+        <span class="card-emoji">🎯</span>
+        <h3>Accuracy Game</h3>
+        <p>Players are 12 yards apart with a 1-yard gate in the middle. There must be a line between players.</p>
+        <ul class="scoring">
+          <li>Hit a cone = 1 point</li>
+          <li>Miss the gate = 2 points</li>
+          <li>Keep your pass touching the center line = 1 point</li>
+        </ul>
+        <p>First player to 6 points loses.</p>
+        <ul class="technique">
+          <li>Start your approach directly behind the ball</li>
+          <li>Keep your passing foot perpendicular to the passing line at contact</li>
+          <li>Drive your ankle bone straight down the target line through the ball</li>
+          <li>Return your passing foot straight back to the ground instead of allowing it to swing upward — this keeps the ball driven cleanly along the ground</li>
+        </ul>
+        <p class="card-note">Once players become consistent, increase the challenge by progressing into finishing — slotting the ball into the corner as if beating a goalkeeper in a 1v1. The best training gives them a game that makes the correct technique the easiest way to win.</p>
+      </div>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/tzWFvCIrFg4"
+          title="Accuracy game drill"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
     <div class="card">
       <span class="card-emoji">⚽</span>
       <h3>Standing Power Shots</h3>
