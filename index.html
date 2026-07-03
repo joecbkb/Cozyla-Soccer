@@ -122,7 +122,7 @@
   .card-video {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 300px;
     gap: 0;
     overflow: hidden;
     padding: 0;
@@ -140,6 +140,9 @@
     background: #000;
     border-radius: 0 14px 14px 0;
     overflow: hidden;
+    aspect-ratio: 9 / 16;
+    align-self: stretch;
+    min-height: 0;
   }
 
   .card-video .video-wrap iframe {
@@ -170,6 +173,33 @@
     position: absolute;
     left: 0;
   }
+
+  .card-video .card-content ol {
+    padding: 0;
+    margin: 8px 0;
+    list-style: none;
+    counter-reset: steps;
+  }
+
+  .card-video .card-content ol li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #b0b0b0;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 6px;
+    counter-increment: steps;
+  }
+
+  .card-video .card-content ol li::before {
+    content: counter(steps);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  .cat-speed .card-video ol li::before { color: #f7c948; }
 
   .card-video .card-content ul.scoring li::before {
     content: "⚽";
@@ -252,6 +282,27 @@
         <iframe
           src="https://www.youtube.com/embed/wK2SJ7CUdXo"
           title="Speed training drill"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="card card-video">
+      <div class="card-content">
+        <span class="card-emoji">🏆</span>
+        <h3>Become the Fastest on Your Team</h3>
+        <p>Basic steps to build real speed:</p>
+        <ol>
+          <li>Exercises</li>
+          <li>Plyometrics: Broad Jumps, Hurdle Jumps, Bounding</li>
+          <li>Running Form</li>
+          <li>Sprint Training: 2x/wk Acceleration (10–20 yd) & Max Velocity (30–60 yd)</li>
+        </ol>
+      </div>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/9KyG1OdI44o"
+          title="Become the fastest on your team"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
